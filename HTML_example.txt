@@ -1,0 +1,70 @@
+<html>
+<head></head>
+<body>
+<!-- a - ссылка
+	button - кнопки
+	img - картинка
+	href - Hyper REFerence
+<h1>Test page</h1>
+<h2>Section</h2> 
+div/span-->
+<!-- <a href="https://ya.ru/">
+	<img src="http://arwen-undomiel.com/sc/ttt/GaS/GaS037.jpg">
+</a>
+    <p>Hello <span style="color: red;">world!</span></p>
+    <p>Goodbye</p> -->
+<head>
+	<style>
+		div{border: 2px solid black;}
+		.t12 {
+			width: fit-content;
+			display: inline-block;
+			margin-left: 100px;
+			margin-right: 100px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		.t3 {
+			width: fit-content;
+			margin-left: 225px;
+		}
+	</style>
+</head>
+<div style="display: inline-block;">
+	<div>
+		<div class="t12">Текст1</div>
+		<div class="t12">Текст2</div>
+	</div>
+	<div>
+		<div class="t3">Текст3</div>
+	</div>
+</div>
+<!-- <head>
+	<style>
+		div{border: 3px solid black;}
+		.menu {
+			font-size: 5em;
+			color: seagreen;
+		}
+		.text {
+			font-size: 2em;
+			color: darkturquoise;
+		}
+		.link {
+			font-size: 5em;
+			color: blueviolet;
+			background: ghostwhite;
+		}
+	</style>
+</head>
+<div style="display: inline-block;">
+	<div class="link"; style="display: inline-block;">
+		<a href="https://c.tenor.com/C2mocsFyabsAAAAC/alan-donnelly.gif">Ссылка</a>
+	</div>
+	<div style="display: inline-block;">
+		<div class="menu">Голлум</div>
+		<div class="text">Жил-был эльф, которого пытали злые силы. Их имя - работа без выходных.</div>
+	</div>
+</div> -->
+</body>
+</html>

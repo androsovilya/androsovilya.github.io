@@ -1,0 +1,144 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Информатика</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme">
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section><h2 style="font-size: 2em;">Основные теги</h2></section>
+					<section>
+						<h2>Абзац</h2>
+						<p>Тег: p. Запихивает содержимое в один абзац.</p>
+					</section>
+					<section>
+						<h2>Ссылка</h2>
+						<p>Тег: a. Текст является ссылкой на другой сайт(его URL вы указываете).</p>
+					</section>
+					<section>
+						<h2>Картинка</h2>
+						<p>Тег: img. Отображает картинку, а вы передаёте расположение картинки.</p>
+					</section>
+					<section>
+						<h2>Блочный контейнер</h2>
+						<p>Тег: div. Содержимое запаковывается в "коробочку".</p>
+					</section>
+					<section>
+						<h2>Строчный контейнер</h2>
+						<p>Тег: span</p>
+					</section>
+					<section>
+						<h2>Заголовки</h2>
+						<p>Теги:</p>
+						<div class="fragment"; style="display: inline-block;">h1, </div>
+						<div class="fragment"; style="display: inline-block;">h2, </div>
+						<div class="fragment"; style="display: inline-block;">h3, </div>
+						<div class="fragment"; style="display: inline-block;">h4, </div>
+						<div class="fragment"; style="display: inline-block;">h5, </div>
+						<div class="fragment"; style="display: inline-block;">h6.</div>
+					</section>
+					<section>
+						<h2>Разрыв строки</h2>
+						<p>Тег: br</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2 style="font-size: 2em;">Режимы отображения:</h2>
+						<ul>
+							<li class="fragment"; style="font-size: 1.5em;">Display: block</li>
+							<li class="fragment"; style="font-size: 1.5em;">Display: inline</li>
+							<li class="fragment"; style="font-size: 1.5em;">Display: inline-block</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Display: block</h2>
+						<p>Блочные элементы располагаются один под другим. Блок расширяется, насколько можно. Но можно просто взять и задать ширину с высотой.</p>
+					</section>
+					<section>
+						<h2>Display: inline</h2>
+						<p>Элементы располагаются последовательно на той же строке. Ширина и высота элемента определяются по содержимому. Поменять их нельзя.</p>
+					</section>
+					<section>
+						<h2>Display: inline-block</h2>
+						<p>Располагается в строке. Размер устанавливается по содержимому. Элемент всегда прямоугольный. Работают свойства width/height.</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h2 style="font-size: 2em;">Стили отображения</h2>
+					</section>
+					<section>
+						<h2>Первый способ оформления</h2>
+						<p>В качестве аттрибута использовать style и записать все его параметры через точку с запятой.</p>
+					</section>
+					<section>
+						<h2>Пример такого оформления<h2>
+						<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+							<li class="fragment;" style="font-size: 1.5em;">Текст</li>
+						</code></pre>
+					</section>
+					<section>
+						<h2>Второй способ оформления</h2>
+						<p>Он удобнее, когда огромное количество одних и тех же параметров используются в коде. Внутри тега style, который находится внутри тега head, можно для какого-нибудь тега всегда применять одну и ту же операцию(например, рамка для div). Также внутри того самого тега style можно создавать классы. В каждом классе можно задать характерные для него параметры.
+					</section>
+					<section data-markdown>
+						<h2>Пример этого оформления</h2>
+						<pre data-id="code-animation"><code class="hljs" data-trim data-line-numbers>
+						    div{border: 2px solid black;}
+						    .pagename {
+							    margin-left: 8px;
+							    margin-right: 8px;
+								margin-top: 30px;
+							    margin-bottom: 10px;
+							    color: blueviolet;
+							    font-size: 1.5em;
+							}
+							...
+						</code></pre>
+					</section>
+				</section>
+				<section>
+					<h1>THE END</h1>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/search/search.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+
+			// Also available as an ES module, see:
+			// https://revealjs.com/initialization/
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight ]
+			});
+
+		</script>
+	</body>
+</html>
